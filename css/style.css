@@ -1,0 +1,147 @@
+body {
+	padding: 20px;
+	height: 100vh;
+	position: relative;
+}
+
+section {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+h1 {
+	display: inline-block;
+	width: 100%;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+}
+
+p {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+}
+
+.container {
+	width: 100%;
+	height: auto;
+	justify-content: space-around;
+}
+
+.grid-item {
+	display: flex;
+	width: 100%;
+	aspect-ratio: 1/1;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(169, 249, 249);
+}
+
+.btn-content {
+	padding: 20px;
+}
+
+.btn {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	margin: 10px 0;
+	padding: 18px;
+	border-radius: 50px;
+}
+
+.btn-cool {
+	position: relative;
+	background-color: rgb(229, 234, 236);
+	transition: 0.3s ease-in-out;
+}
+
+.btn-cool::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	bottom: 0;
+	right: 2rem;
+	font-size: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: right 0.3s;
+	width: 6px;
+	height: 6px;
+	border-top: solid 2px currentColor;
+	border-right: solid 2px currentColor;
+	transform: translateY(-50%) rotate(45deg);
+}
+
+.btn-cool:hover:after {
+	right: 1.4rem;
+}
+
+.btn-cool:hover {
+	color: #fff;
+	background-color: rgb(53, 53, 53);
+}
+
+.btn-cute {
+	border: solid 2px pink;
+	background-color: #fff;
+	box-shadow: 0 5px 0 pink;
+	color: pink;
+	transition: .3s;
+}
+
+.btn-cute:hover {
+	border: solid 2px pink;
+	transform: translateY(5px);
+	color: pink;
+	box-shadow: 0 0 0 pink;
+}
+
+.btn-natural {
+	position: relative;
+	transition: 0.3s;
+	background-color: rgb(236, 215, 181);
+
+}
+
+.btn-natural::before {
+	content: '';
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	width: calc(100% - 4px);
+	height: calc(100% - 4px);
+	border: 2px solid rgb(165, 117, 50);
+	border-radius: 50vh;
+	transition: 0.2s;
+}
+
+.btn-natural:hover::before {
+	top: 0;
+	left: 0;
+}
+
+.btn-natural:hover {
+	text-decoration: none;
+	background-color: rgb(218, 192, 131);
+}
+
+.btn-stylish {
+	color: #fff;
+	transition: 0.3s ease-in-out;
+	background: linear-gradient(270deg, #3bade3 0%, #576fe6 25%, #9844b7 51%, #ff357f 100%);
+	background-position: 1% 50%;
+	background-size: 200% auto;
+	transition: all 0.3s ease-out;
+}
+
+.btn-stylish:hover {
+	color: #fff;
+	background-position: 99% 50%;
+}
